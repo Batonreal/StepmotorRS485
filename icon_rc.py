@@ -1,0 +1,336 @@
+# Resource object code (Python 3)
+# Created by: object code
+# Created by: The Resource Compiler for Qt version 6.8.2
+# WARNING! All changes made in this file will be lost!
+
+from PySide6 import QtCore
+
+qt_resource_data = b"\
+\x00\x00\x05]\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22iso\
+-8859-1\x22?><!-- G\
+enerator: Adobe \
+Illustrator 19.2\
+.1, SVG Export P\
+lug-In . SVG Ver\
+sion: 6.00 Build\
+ 0)  --><svg xml\
+ns=\x22http://www.w\
+3.org/2000/svg\x22 \
+xmlns:xlink=\x22htt\
+p://www.w3.org/1\
+999/xlink\x22 versi\
+on=\x221.1\x22 id=\x22Lay\
+er_1\x22 x=\x220px\x22 y=\
+\x220px\x22 viewBox=\x220\
+ 0 80 80\x22 style=\
+\x22enable-backgrou\
+nd:new 0 0 80 80\
+;\x22 xml:space=\x22pr\
+eserve\x22 width=\x228\
+0\x22 height=\x2280\x22>\x0a\
+<g>\x0a\x09<path style\
+=\x22fill:#F78F8F;\x22\
+ d=\x22M40,77.5C19.\
+322,77.5,2.5,60.\
+678,2.5,40S19.32\
+2,2.5,40,2.5S77.\
+5,19.322,77.5,40\
+S60.678,77.5,40,\
+77.5   z\x22/>\x0a\x09<g>\
+\x0a\x09\x09<path style=\x22\
+fill:#C74343;\x22 d\
+=\x22M40,3c20.402,0\
+,37,16.598,37,37\
+S60.402,77,40,77\
+S3,60.402,3,40S1\
+9.598,3,40,3 M40\
+,2    C19.013,2,\
+2,19.013,2,40s17\
+.013,38,38,38s38\
+-17.013,38-38S60\
+.987,2,40,2L40,2\
+z\x22/>\x0a\x09</g>\x0a</g>\x0a\
+<path style=\x22fil\
+l:#FFFFFF;\x22 d=\x22M\
+46,40h6V21c0-1.6\
+57-1.343-3-3-3h0\
+c-1.657,0-3,1.34\
+3-3,3V40z\x22/>\x0a<pa\
+th style=\x22fill:#\
+FFFFFF;\x22 d=\x22M30,\
+40h6V17c0-1.657-\
+1.343-3-3-3h0c-1\
+.657,0-3,1.343-3\
+,3V40z\x22/>\x0a<path \
+style=\x22fill:#FFF\
+FFF;\x22 d=\x22M22,46h\
+6V25c0-1.657-1.3\
+43-3-3-3h0c-1.65\
+7,0-3,1.343-3,3V\
+46z\x22/>\x0a<path sty\
+le=\x22fill:#FFFFFF\
+;\x22 d=\x22M38,40h6V1\
+5c0-1.657-1.343-\
+3-3-3h0c-1.657,0\
+-3,1.343-3,3V40z\
+\x22/>\x0a<path style=\
+\x22fill:#FFFFFF;\x22 \
+d=\x22M43.474,54.86\
+9l5.829,5.829l13\
+.494-13.494c1.56\
+2-1.562,1.562-4.\
+095,0-5.657l-0.1\
+72-0.172  c-1.56\
+2-1.562-4.095-1.\
+562-5.657,0L43.4\
+74,54.869z\x22/>\x0a<p\
+ath style=\x22fill:\
+#FFFFFF;\x22 d=\x22M42\
+,64H32c-5.523,0-\
+10-4.477-10-10V3\
+6h30v18C52,59.52\
+3,47.523,64,42,6\
+4z\x22/>\x0a</svg>\
+\x00\x00\x02\x10\
+<\
+?xml version=\x221.\
+0\x22 ?><svg xmlns=\
+\x22http://www.w3.o\
+rg/2000/svg\x22 wid\
+th=\x2224\x22 height=\x22\
+24\x22 viewBox=\x220 0\
+ 24 24\x22 fill=\x22no\
+ne\x22><path d=\x22M12\
+ 5.58579L17.4142\
+ 11L16 12.4142L1\
+3 9.41421V18H11V\
+9.41421L8 12.414\
+2L6.58579 11L12 \
+5.58579Z\x22 fill=\x22\
+black\x22/><path fi\
+ll-rule=\x22evenodd\
+\x22 clip-rule=\x22eve\
+nodd\x22 d=\x22M1 12C1\
+ 5.92487 5.92487\
+ 1 12 1C18.0751 \
+1 23 5.92487 23 \
+12C23 18.0751 18\
+.0751 23 12 23C5\
+.92487 23 1 18.0\
+751 1 12ZM12 3C7\
+.02944 3 3 7.029\
+44 3 12C3 16.970\
+6 7.02944 21 12 \
+21C16.9706 21 21\
+ 16.9706 21 12C2\
+1 7.02944 16.970\
+6 3 12 3Z\x22 fill=\
+\x22black\x22/></svg>\
+\x00\x00\x02\x09\
+<\
+?xml version=\x221.\
+0\x22 ?><svg xmlns=\
+\x22http://www.w3.o\
+rg/2000/svg\x22 wid\
+th=\x2224\x22 height=\x22\
+24\x22 viewBox=\x220 0\
+ 24 24\x22 fill=\x22no\
+ne\x22><path d=\x22M13\
+ 6V14.5858L16 11\
+.5858L17.4142 13\
+L12 18.4142L6.58\
+579 13L8 11.5858\
+L11 14.5858V6H13\
+Z\x22 fill=\x22black\x22/\
+><path fill-rule\
+=\x22evenodd\x22 clip-\
+rule=\x22evenodd\x22 d\
+=\x22M1 12C1 5.9248\
+7 5.92487 1 12 1\
+C18.0751 1 23 5.\
+92487 23 12C23 1\
+8.0751 18.0751 2\
+3 12 23C5.92487 \
+23 1 18.0751 1 1\
+2ZM12 3C7.02944 \
+3 3 7.02944 3 12\
+C3 16.9706 7.029\
+44 21 12 21C16.9\
+706 21 21 16.970\
+6 21 12C21 7.029\
+44 16.9706 3 12 \
+3Z\x22 fill=\x22black\x22\
+/></svg>\
+\x00\x00\x00\xf9\
+\x00\
+\x00\x03\xb5x\xda\xbd\x931O\xc30\x10\x85\xf7\xfe\x8a\
+\xd3\xed\x8d\xed\xd8@@u\x87N\x19\xca\x9a\x81-$\
+nlj\xec(q\xeb\xf2\xefq\x14\x05\x09$\x06\x86\
+\xb0\xbd{\xd2\xddw\xef\xa4\xdb\x8d\xd7\x0e\xa2i\x83\x96\
+(\x0a\x04\xadL\xa7\xc3\xac\xafF\xc5\x83\xbfI\xa4@\
+A\x140y'c\xadD\xe7\x9dB\xb8\xbd[7J\
+\xd4!\xf4O\x84\xc4\x18\xb3\xc83?t$\xa7\x94\x92\
+4\x18\xf7\x9b\xdd\xa0\x9a\xf0\x1b`\x1e\x16\xb5\x09j.\
+\xb6\xbe\xaf\x1b\x13>\x122\xa3\x0cI\xea\xef\xeb\xa0\xa1\
+\x95\xf8\x9c\x16\xa0%\xadDQ\x8a\xa2\xa2/\x7f\xecf\
+\xf7\xc0\xef\x8e,\xe5`G\x91$\xc2\x18\x06\x7fV\x12\
+_m\xdd\x9c\x97r\xbbl\xfaeX\xe3TS\xf7\x12\
+\x07\x7fq\xed7\xfb\xcd\x1b\xb7\xf8?a\x8cO\xb0\x87\
+\xc4b|]V\xa2T\x82\xad\xca\x10\x02\x1e\xcb<_\
+\x95\xc1\xd3\xcdV\x87\xa4 \xf9\x7f$\xe1kA\xa6\xaf\
+\xdao>\x01!\xc01\xf2\
+\x00\x00\x02`\
+<\
+svg width=\x2248\x22 h\
+eight=\x2248\x22 viewB\
+ox=\x220 0 48 48\x22 f\
+ill=\x22none\x22 xmlns\
+=\x22http://www.w3.\
+org/2000/svg\x22>\x0a<\
+rect width=\x2248\x22 \
+height=\x2248\x22 fill\
+=\x22white\x22 fill-op\
+acity=\x220.01\x22/>\x0a<\
+path d=\x22M24 44C3\
+5.0457 44 44 35.\
+0457 44 24C44 12\
+.9543 35.0457 4 \
+24 4C12.9543 4 4\
+ 12.9543 4 24C4 \
+35.0457 12.9543 \
+44 24 44Z\x22 fill=\
+\x22#2F88FF\x22 stroke\
+=\x22black\x22 stroke-\
+width=\x224\x22 stroke\
+-linejoin=\x22round\
+\x22/>\x0a<path d=\x22M14\
+.4917 24.5H32.49\
+17\x22 stroke=\x22whit\
+e\x22 stroke-width=\
+\x224\x22 stroke-linec\
+ap=\x22round\x22 strok\
+e-linejoin=\x22roun\
+d\x22/>\x0a<path d=\x22M2\
+3.4917 15.5L32.4\
+917 24.5L23.4917\
+ 33.5\x22 stroke=\x22w\
+hite\x22 stroke-wid\
+th=\x224\x22 stroke-li\
+necap=\x22round\x22 st\
+roke-linejoin=\x22r\
+ound\x22/>\x0a</svg>\x0a\
+\x00\x00\x02`\
+<\
+svg width=\x2248\x22 h\
+eight=\x2248\x22 viewB\
+ox=\x220 0 48 48\x22 f\
+ill=\x22none\x22 xmlns\
+=\x22http://www.w3.\
+org/2000/svg\x22>\x0a<\
+rect width=\x2248\x22 \
+height=\x2248\x22 fill\
+=\x22white\x22 fill-op\
+acity=\x220.01\x22/>\x0a<\
+path d=\x22M24 44C3\
+5.0457 44 44 35.\
+0457 44 24C44 12\
+.9543 35.0457 4 \
+24 4C12.9543 4 4\
+ 12.9543 4 24C4 \
+35.0457 12.9543 \
+44 24 44Z\x22 fill=\
+\x22#2F88FF\x22 stroke\
+=\x22black\x22 stroke-\
+width=\x224\x22 stroke\
+-linejoin=\x22round\
+\x22/>\x0a<path d=\x22M32\
+.4917 24.5H14.49\
+17\x22 stroke=\x22whit\
+e\x22 stroke-width=\
+\x224\x22 stroke-linec\
+ap=\x22round\x22 strok\
+e-linejoin=\x22roun\
+d\x22/>\x0a<path d=\x22M2\
+3.4917 15.5L14.4\
+917 24.5L23.4917\
+ 33.5\x22 stroke=\x22w\
+hite\x22 stroke-wid\
+th=\x224\x22 stroke-li\
+necap=\x22round\x22 st\
+roke-linejoin=\x22r\
+ound\x22/>\x0a</svg>\x0a\
+"
+
+qt_resource_name = b"\
+\x00\x05\
+\x00o\xa6S\
+\x00i\
+\x00c\x00o\x00n\x00s\
+\x00#\
+\x03g\xf4\x07\
+\x00P\
+\x00r\x00i\x00v\x00a\x00t\x00e\x00-\x008\x000\x00_\x00i\x00c\x00o\x00n\x00-\x00i\
+\x00c\x00o\x00n\x00s\x00.\x00c\x00o\x00m\x00_\x005\x007\x002\x008\x006\x00.\x00s\
+\x00v\x00g\
+\x00%\
+\x07\x10\xcbG\
+\x00a\
+\x00r\x00r\x00o\x00w\x00_\x00c\x00i\x00r\x00c\x00l\x00e\x00_\x00u\x00p\x00_\x00a\
+\x00r\x00r\x00o\x00w\x00_\x00i\x00c\x00o\x00n\x00_\x002\x005\x003\x008\x007\x009\
+\x00.\x00s\x00v\x00g\
+\x00'\
+\x0b\x98\xe2G\
+\x00c\
+\x00i\x00r\x00c\x00l\x00e\x00_\x00d\x00o\x00w\x00n\x00_\x00a\x00r\x00r\x00o\x00w\
+\x00_\x00a\x00r\x00r\x00o\x00w\x00_\x00i\x00c\x00o\x00n\x00_\x002\x005\x003\x008\
+\x009\x003\x00.\x00s\x00v\x00g\
+\x00\x1a\
+\x06\xe7\x93'\
+\x00r\
+\x00o\x00w\x00_\x00h\x00e\x00i\x00g\x00h\x00t\x00_\x00i\x00c\x00o\x00n\x00_\x001\
+\x005\x004\x008\x008\x002\x00.\x00s\x00v\x00g\
+\x00\x22\
+\x0dv\xcf\xc7\
+\x00a\
+\x00r\x00r\x00o\x00w\x00_\x00c\x00i\x00r\x00c\x00l\x00e\x00_\x00r\x00i\x00g\x00h\
+\x00t\x00_\x00i\x00c\x00o\x00n\x00_\x001\x005\x005\x007\x009\x008\x00.\x00s\x00v\
+\x00g\
+\x00!\
+\x03\xfc\x96\xa7\
+\x00a\
+\x00r\x00r\x00o\x00w\x00_\x00c\x00i\x00r\x00c\x00l\x00e\x00_\x00l\x00e\x00f\x00t\
+\x00_\x00i\x00c\x00o\x00n\x00_\x001\x005\x005\x007\x009\x009\x00.\x00s\x00v\x00g\
+\
+"
+
+qt_resource_struct = b"\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x01\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x02\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x06\x00\x00\x00\x03\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00\x10\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\
+\x00\x00\x01\x95\xf6`\xda]\
+\x00\x00\x01\x84\x00\x00\x00\x00\x00\x01\x00\x00\x0c\xe3\
+\x00\x00\x01\x95\xf6_\xec\xa2\
+\x00\x00\x01\x00\x00\x01\x00\x00\x00\x01\x00\x00\x09\x82\
+\x00\x00\x01\x95\xf6`l\x9e\
+\x00\x00\x00\x5c\x00\x00\x00\x00\x00\x01\x00\x00\x05a\
+\x00\x00\x01\x95\xf6m\xe1W\
+\x00\x00\x00\xac\x00\x00\x00\x00\x00\x01\x00\x00\x07u\
+\x00\x00\x01\x95\xf6n\x09\xb5\
+\x00\x00\x01:\x00\x00\x00\x00\x00\x01\x00\x00\x0a\x7f\
+\x00\x00\x01\x95\xf6_\xd3>\
+"
+
+def qInitResources():
+    QtCore.qRegisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)
+
+def qCleanupResources():
+    QtCore.qUnregisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)
+
+qInitResources()

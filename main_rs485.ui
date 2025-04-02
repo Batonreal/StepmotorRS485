@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>470</width>
+    <height>307</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Times New Roman</family>
+    <pointsize>18</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>AlternativaRS485</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QComboBox" name="com_port"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_button">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+color: black;
+background-color: rgba(0, 0, 0, 40);
+border: 2px solid rgba(0, 0, 0, 50);
+}
+QPushButton:hover {
+background-color: rgba(0, 0, 0, 50);
+}
+
+QPushButton:pressed {
+background-color: rgba(0, 0, 0, 80);
+}</string>
+          </property>
+          <property name="text">
+           <string>Выбрать</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="backward_button">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>17</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+color: black;
+background-color: rgba(0, 0, 0, 40);
+border: 2px solid rgba(0, 0, 0, 50);
+}
+QPushButton:hover {
+background-color: rgba(0, 0, 0, 50);
+}
+
+QPushButton:pressed {
+background-color: rgba(0, 0, 0, 80);
+}</string>
+          </property>
+          <property name="text">
+           <string>Назад</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icon.qrc">
+            <normaloff>:/icons/icons/arrow_circle_left_icon_155799.svg</normaloff>:/icons/icons/arrow_circle_left_icon_155799.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="forward_button">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>17</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+color: black;
+background-color: rgba(0, 0, 0, 40);
+border: 2px solid rgba(0, 0, 0, 50);
+}
+QPushButton:hover {
+background-color: rgba(0, 0, 0, 50);
+}
+
+QPushButton:pressed {
+background-color: rgba(0, 0, 0, 80);
+}</string>
+          </property>
+          <property name="text">
+           <string>Вперед</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icon.qrc">
+            <normaloff>:/icons/icons/arrow_circle_right_icon_155798.svg</normaloff>:/icons/icons/arrow_circle_right_icon_155798.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QSpinBox" name="spinbox">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QSpinBox {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                 stop:0 #ffffff, stop:1 #f0f0f0);
+    border: 1px solid #b0b0b0;
+    padding: 10px;
+    font-size: 22px;
+    color: #333;
+    border-radius: 5px;
+}
+
+QSpinBox:focus {
+    border: 1px solid #4da6ff;
+    outline: none;
+}
+
+QSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 25px;
+    height: 25px;
+    border-left: 1px solid #b0b0b0;
+}
+
+QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    width: 25px;
+    height: 25px;
+    border-left: 1px solid #b0b0b0;
+}
+
+QSpinBox::up-arrow {
+    width: 18px;
+    height: 18px;
+    image: url(:/icons/icons/arrow_circle_up_arrow_icon_253879.svg);
+}
+
+QSpinBox::down-arrow {
+    width: 18px;
+    height: 18px;
+    image: url(:/icons/icons/circle_down_arrow_arrow_icon_253893.svg);
+}
+
+QSpinBox::up-button:hover {
+    background-color: #e0e0e0;
+}
+
+QSpinBox::down-button:hover {
+    background-color: #e0e0e0;
+}
+
+QSpinBox::up-button:pressed {
+    background-color: #d0d0d0;
+}
+
+QSpinBox::down-button:pressed {
+    background-color: #d0d0d0;
+}</string>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>16</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="set_button">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>17</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+color: black;
+background-color: rgba(0, 0, 0, 40);
+border: 2px solid rgba(0, 0, 0, 50);
+}
+QPushButton:hover {
+background-color: rgba(0, 0, 0, 50);
+}
+
+QPushButton:pressed {
+background-color: rgba(0, 0, 0, 80);
+}</string>
+          </property>
+          <property name="text">
+           <string>Установить</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icon.qrc">
+            <normaloff>:/icons/icons/row_height_icon_154882.svg</normaloff>:/icons/icons/row_height_icon_154882.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="brake_button">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>17</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: black;
+background-color: rgba(0, 0, 0, 40);
+border: 2px solid rgba(0, 0, 0, 50);
+}
+QPushButton:hover {
+background-color: rgba(0, 0, 0, 50);
+}
+
+QPushButton:pressed {
+background-color: rgba(0, 0, 0, 80);
+}</string>
+        </property>
+        <property name="text">
+         <string>Тормоз</string>
+        </property>
+        <property name="icon">
+         <iconset resource="icon.qrc">
+          <normaloff>:/icons/icons/Private-80_icon-icons.com_57286.svg</normaloff>:/icons/icons/Private-80_icon-icons.com_57286.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>470</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="refresh"/>
+    <addaction name="separator"/>
+    <addaction name="action"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+  </action>
+  <action name="refresh">
+   <property name="text">
+    <string>Обновить</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
