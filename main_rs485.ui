@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>470</width>
-    <height>307</height>
+    <height>300</height>
    </rect>
   </property>
   <property name="font">
@@ -18,6 +18,16 @@
   </property>
   <property name="windowTitle">
    <string>AlternativaRS485</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/icons/icons/stepmotor.jpg</normaloff>:/icons/icons/stepmotor.jpg</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>35</width>
+    <height>35</height>
+   </size>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -30,8 +40,11 @@
        <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
          <widget class="QLabel" name="label">
-          <property name="text">
-           <string/>
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>14</pointsize>
+           </font>
           </property>
          </widget>
         </item>
@@ -318,11 +331,11 @@ background-color: rgba(0, 0, 0, 80);
     </property>
     <addaction name="refresh"/>
     <addaction name="separator"/>
-    <addaction name="action"/>
+    <addaction name="exit"/>
    </widget>
    <addaction name="menu"/>
   </widget>
-  <action name="action">
+  <action name="exit">
    <property name="text">
     <string>Выход</string>
    </property>

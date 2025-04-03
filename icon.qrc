@@ -1,6 +1,7 @@
 <RCC>
   <qresource prefix="icons">
     <file>icons/circle_down_arrow_arrow_icon_253893.svg</file>
+    <file>icons/stepmotor.jpg</file>
     <file>icons/arrow_circle_up_arrow_icon_253879.svg</file>
     <file>icons/arrow_circle_left_icon_155799.svg</file>
     <file>icons/arrow_circle_right_icon_155798.svg</file>
