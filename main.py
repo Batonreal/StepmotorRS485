@@ -78,6 +78,7 @@ class RS485StepperControl(QMainWindow):
         self.ui.com_port.currentIndexChanged.connect(self.on_com_port_changed)
         self.ui.select_button.clicked.connect(self.select_com_port)
         self.ui.refresh.triggered.connect(self.populate_com_ports)
+        self.ui.exit.triggered.connect(self.close)
 
     def select_com_port(self):
         """Обработчик кнопки выбора COM-порта."""
@@ -107,10 +108,10 @@ class RS485StepperControl(QMainWindow):
 
         try:
             self.master.execute(self.slave_id, cst.WRITE_SINGLE_COIL, register_address, output_value=1)
-            self.ui.label.setText("Отправлено в " + str(register_address))
-            QTimer.singleShot(1000, lambda: self.reset_coil(register_address))
+            self.ui.label.setText("Отправлено в " + str(hex(register_address)))
+            QTimer.singleShot(2000, lambda: self.reset_coil(register_address))
         except Exception as e:
-            QMessageBox.critical(self, "Ошибка", f"Ошибка записи coil {register_address}: {e}")
+            QMessageBox.critical(self, "Ошибка", f"Ошибка записи coil {hex(register_address)}: {e}")
             self.ui.label.setText("Error")
 
 
@@ -122,9 +123,9 @@ class RS485StepperControl(QMainWindow):
 
         try:
             self.master.execute(self.slave_id, cst.WRITE_SINGLE_COIL, register_address, output_value=0)
-            self.ui.label.setText("Запись в " + str(register_address))
+            self.ui.label.setText("Запись в " + str(hex(register_address)))
         except Exception as e:
-            QMessageBox.critical(self, "Ошибка", f"Ошибка сброса coil {register_address}: {e}")
+            QMessageBox.critical(self, "Ошибка", f"Ошибка сброса coil {hex(register_address)}: {e}")
             self.ui.label.setText("Error")
 
     def forward(self):
@@ -144,6 +145,7 @@ class RS485StepperControl(QMainWindow):
         value = self.ui.spinbox.value()
         try:
             self.master.execute(self.slave_id, cst.WRITE_SINGLE_REGISTER, 0x4000, output_value=value)
+            self.ui.label.setText("Запись в " + str(hex(0x4000)))
         except Exception as e:
             QMessageBox.critical(self, "Ошибка", f"Ошибка записи в регистр 0x4000: {e}")
 
