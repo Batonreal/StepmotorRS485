@@ -1,5 +1,8 @@
 <RCC>
   <qresource prefix="icons">
+    <file>icons/help_information_chat_bubble_info_about_communications_speech_icon_258982.svg</file>
+    <file>icons/powercircleandlinesymbol_118369.svg</file>
+    <file>icons/reload_update_refresh_icon_143703.svg</file>
     <file>icons/circle_down_arrow_arrow_icon_253893.svg</file>
     <file>icons/stepmotor.jpg</file>
     <file>icons/arrow_circle_up_arrow_icon_253879.svg</file>

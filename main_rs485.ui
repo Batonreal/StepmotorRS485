@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>470</width>
-    <height>300</height>
+    <height>304</height>
    </rect>
   </property>
   <property name="font">
@@ -50,6 +50,18 @@
         </item>
         <item>
          <widget class="QPushButton" name="select_button">
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>16</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+            <underline>false</underline>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>Подтвердить выбор COM-порта</string>
+          </property>
           <property name="styleSheet">
            <string notr="true">QPushButton {
 color: black;
@@ -80,6 +92,9 @@ background-color: rgba(0, 0, 0, 80);
             <family>Times New Roman</family>
             <pointsize>17</pointsize>
            </font>
+          </property>
+          <property name="toolTip">
+           <string>Вращать шаговый двигатель в обратном направлении</string>
           </property>
           <property name="styleSheet">
            <string notr="true">QPushButton {
@@ -118,6 +133,9 @@ background-color: rgba(0, 0, 0, 80);
             <pointsize>17</pointsize>
            </font>
           </property>
+          <property name="toolTip">
+           <string>Вращать шаговый двигатель в прямом направлении</string>
+          </property>
           <property name="styleSheet">
            <string notr="true">QPushButton {
 color: black;
@@ -155,6 +173,9 @@ background-color: rgba(0, 0, 0, 80);
          <widget class="QSpinBox" name="spinbox">
           <property name="enabled">
            <bool>true</bool>
+          </property>
+          <property name="toolTip">
+           <string>Кол-во шагов</string>
           </property>
           <property name="styleSheet">
            <string notr="true">QSpinBox {
@@ -220,7 +241,7 @@ QSpinBox::down-button:pressed {
            <number>1</number>
           </property>
           <property name="maximum">
-           <number>16</number>
+           <number>10</number>
           </property>
          </widget>
         </item>
@@ -231,6 +252,9 @@ QSpinBox::down-button:pressed {
             <family>Times New Roman</family>
             <pointsize>17</pointsize>
            </font>
+          </property>
+          <property name="toolTip">
+           <string>Установить количество шагов шагового двигателя</string>
           </property>
           <property name="styleSheet">
            <string notr="true">QPushButton {
@@ -270,6 +294,9 @@ background-color: rgba(0, 0, 0, 80);
           <family>Times New Roman</family>
           <pointsize>17</pointsize>
          </font>
+        </property>
+        <property name="toolTip">
+         <string>Включить тормоз, убрать из режима удержания</string>
         </property>
         <property name="styleSheet">
          <string notr="true">QPushButton {
@@ -333,9 +360,20 @@ background-color: rgba(0, 0, 0, 80);
     <addaction name="separator"/>
     <addaction name="exit"/>
    </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>О приложении</string>
+    </property>
+    <addaction name="About"/>
+   </widget>
    <addaction name="menu"/>
+   <addaction name="menu_2"/>
   </widget>
   <action name="exit">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icons/icons/powercircleandlinesymbol_118369.svg</normaloff>:/icons/icons/powercircleandlinesymbol_118369.svg</iconset>
+   </property>
    <property name="text">
     <string>Выход</string>
    </property>
@@ -344,8 +382,24 @@ background-color: rgba(0, 0, 0, 80);
    </property>
   </action>
   <action name="refresh">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icons/icons/reload_update_refresh_icon_143703.svg</normaloff>:/icons/icons/reload_update_refresh_icon_143703.svg</iconset>
+   </property>
    <property name="text">
+    <string>Обновить список COM-портов</string>
+   </property>
+   <property name="toolTip">
     <string>Обновить</string>
+   </property>
+  </action>
+  <action name="About">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icons/icons/help_information_chat_bubble_info_about_communications_speech_icon_258982.svg</normaloff>:/icons/icons/help_information_chat_bubble_info_about_communications_speech_icon_258982.svg</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
    </property>
   </action>
  </widget>

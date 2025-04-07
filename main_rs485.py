@@ -25,7 +25,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(470, 300)
+        MainWindow.resize(470, 304)
         font = QFont()
         font.setFamilies([u"Times New Roman"])
         font.setPointSize(18)
@@ -36,10 +36,21 @@ class Ui_MainWindow(object):
         MainWindow.setIconSize(QSize(35, 35))
         self.exit = QAction(MainWindow)
         self.exit.setObjectName(u"exit")
+        icon1 = QIcon()
+        icon1.addFile(u":/icons/icons/powercircleandlinesymbol_118369.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.exit.setIcon(icon1)
         font1 = QFont()
         self.exit.setFont(font1)
         self.refresh = QAction(MainWindow)
         self.refresh.setObjectName(u"refresh")
+        icon2 = QIcon()
+        icon2.addFile(u":/icons/icons/reload_update_refresh_icon_143703.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.refresh.setIcon(icon2)
+        self.About = QAction(MainWindow)
+        self.About.setObjectName(u"About")
+        icon3 = QIcon()
+        icon3.addFile(u":/icons/icons/help_information_chat_bubble_info_about_communications_speech_icon_258982.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.About.setIcon(icon3)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.horizontalLayout_3 = QHBoxLayout(self.centralwidget)
@@ -64,6 +75,13 @@ class Ui_MainWindow(object):
 
         self.select_button = QPushButton(self.centralwidget)
         self.select_button.setObjectName(u"select_button")
+        font3 = QFont()
+        font3.setFamilies([u"Segoe UI"])
+        font3.setPointSize(16)
+        font3.setBold(False)
+        font3.setItalic(False)
+        font3.setUnderline(False)
+        self.select_button.setFont(font3)
         self.select_button.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgba(0, 0, 0, 40);\n"
@@ -86,10 +104,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.backward_button = QPushButton(self.centralwidget)
         self.backward_button.setObjectName(u"backward_button")
-        font3 = QFont()
-        font3.setFamilies([u"Times New Roman"])
-        font3.setPointSize(17)
-        self.backward_button.setFont(font3)
+        font4 = QFont()
+        font4.setFamilies([u"Times New Roman"])
+        font4.setPointSize(17)
+        self.backward_button.setFont(font4)
         self.backward_button.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgba(0, 0, 0, 40);\n"
@@ -102,16 +120,16 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "background-color: rgba(0, 0, 0, 80);\n"
 "}")
-        icon1 = QIcon()
-        icon1.addFile(u":/icons/icons/arrow_circle_left_icon_155799.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.backward_button.setIcon(icon1)
+        icon4 = QIcon()
+        icon4.addFile(u":/icons/icons/arrow_circle_left_icon_155799.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.backward_button.setIcon(icon4)
         self.backward_button.setIconSize(QSize(50, 50))
 
         self.horizontalLayout_2.addWidget(self.backward_button)
 
         self.forward_button = QPushButton(self.centralwidget)
         self.forward_button.setObjectName(u"forward_button")
-        self.forward_button.setFont(font3)
+        self.forward_button.setFont(font4)
         self.forward_button.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgba(0, 0, 0, 40);\n"
@@ -124,9 +142,9 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "background-color: rgba(0, 0, 0, 80);\n"
 "}")
-        icon2 = QIcon()
-        icon2.addFile(u":/icons/icons/arrow_circle_right_icon_155798.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.forward_button.setIcon(icon2)
+        icon5 = QIcon()
+        icon5.addFile(u":/icons/icons/arrow_circle_right_icon_155798.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.forward_button.setIcon(icon5)
         self.forward_button.setIconSize(QSize(50, 50))
 
         self.horizontalLayout_2.addWidget(self.forward_button)
@@ -199,13 +217,13 @@ class Ui_MainWindow(object):
 "    background-color: #d0d0d0;\n"
 "}")
         self.spinbox.setMinimum(1)
-        self.spinbox.setMaximum(16)
+        self.spinbox.setMaximum(10)
 
         self.horizontalLayout.addWidget(self.spinbox)
 
         self.set_button = QPushButton(self.centralwidget)
         self.set_button.setObjectName(u"set_button")
-        self.set_button.setFont(font3)
+        self.set_button.setFont(font4)
         self.set_button.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgba(0, 0, 0, 40);\n"
@@ -218,9 +236,9 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "background-color: rgba(0, 0, 0, 80);\n"
 "}")
-        icon3 = QIcon()
-        icon3.addFile(u":/icons/icons/row_height_icon_154882.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.set_button.setIcon(icon3)
+        icon6 = QIcon()
+        icon6.addFile(u":/icons/icons/row_height_icon_154882.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.set_button.setIcon(icon6)
         self.set_button.setIconSize(QSize(50, 50))
 
         self.horizontalLayout.addWidget(self.set_button)
@@ -230,7 +248,7 @@ class Ui_MainWindow(object):
 
         self.brake_button = QPushButton(self.centralwidget)
         self.brake_button.setObjectName(u"brake_button")
-        self.brake_button.setFont(font3)
+        self.brake_button.setFont(font4)
         self.brake_button.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgba(0, 0, 0, 40);\n"
@@ -243,9 +261,9 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "background-color: rgba(0, 0, 0, 80);\n"
 "}")
-        icon4 = QIcon()
-        icon4.addFile(u":/icons/icons/Private-80_icon-icons.com_57286.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.brake_button.setIcon(icon4)
+        icon7 = QIcon()
+        icon7.addFile(u":/icons/icons/Private-80_icon-icons.com_57286.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.brake_button.setIcon(icon7)
         self.brake_button.setIconSize(QSize(50, 50))
 
         self.verticalLayout.addWidget(self.brake_button)
@@ -257,22 +275,26 @@ class Ui_MainWindow(object):
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
         self.menubar.setGeometry(QRect(0, 0, 470, 28))
-        font4 = QFont()
-        font4.setFamilies([u"Segoe UI"])
-        font4.setPointSize(12)
-        self.menubar.setFont(font4)
-        self.menu = QMenu(self.menubar)
-        self.menu.setObjectName(u"menu")
         font5 = QFont()
         font5.setFamilies([u"Segoe UI"])
-        font5.setPointSize(10)
-        self.menu.setFont(font5)
+        font5.setPointSize(12)
+        self.menubar.setFont(font5)
+        self.menu = QMenu(self.menubar)
+        self.menu.setObjectName(u"menu")
+        font6 = QFont()
+        font6.setFamilies([u"Segoe UI"])
+        font6.setPointSize(10)
+        self.menu.setFont(font6)
+        self.menu_2 = QMenu(self.menubar)
+        self.menu_2.setObjectName(u"menu_2")
         MainWindow.setMenuBar(self.menubar)
 
         self.menubar.addAction(self.menu.menuAction())
+        self.menubar.addAction(self.menu_2.menuAction())
         self.menu.addAction(self.refresh)
         self.menu.addSeparator()
         self.menu.addAction(self.exit)
+        self.menu_2.addAction(self.About)
 
         self.retranslateUi(MainWindow)
 
@@ -282,12 +304,35 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"AlternativaRS485", None))
         self.exit.setText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0445\u043e\u0434", None))
-        self.refresh.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0431\u043d\u043e\u0432\u0438\u0442\u044c", None))
+        self.refresh.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0431\u043d\u043e\u0432\u0438\u0442\u044c \u0441\u043f\u0438\u0441\u043e\u043a COM-\u043f\u043e\u0440\u0442\u043e\u0432", None))
+#if QT_CONFIG(tooltip)
+        self.refresh.setToolTip(QCoreApplication.translate("MainWindow", u"\u041e\u0431\u043d\u043e\u0432\u0438\u0442\u044c", None))
+#endif // QT_CONFIG(tooltip)
+        self.About.setText(QCoreApplication.translate("MainWindow", u"About", None))
+#if QT_CONFIG(tooltip)
+        self.select_button.setToolTip(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044c \u0432\u044b\u0431\u043e\u0440 COM-\u043f\u043e\u0440\u0442\u0430", None))
+#endif // QT_CONFIG(tooltip)
         self.select_button.setText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0431\u0440\u0430\u0442\u044c", None))
+#if QT_CONFIG(tooltip)
+        self.backward_button.setToolTip(QCoreApplication.translate("MainWindow", u"\u0412\u0440\u0430\u0449\u0430\u0442\u044c \u0448\u0430\u0433\u043e\u0432\u044b\u0439 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044c \u0432 \u043e\u0431\u0440\u0430\u0442\u043d\u043e\u043c \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0438", None))
+#endif // QT_CONFIG(tooltip)
         self.backward_button.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0437\u0430\u0434", None))
+#if QT_CONFIG(tooltip)
+        self.forward_button.setToolTip(QCoreApplication.translate("MainWindow", u"\u0412\u0440\u0430\u0449\u0430\u0442\u044c \u0448\u0430\u0433\u043e\u0432\u044b\u0439 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044c \u0432 \u043f\u0440\u044f\u043c\u043e\u043c \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0438", None))
+#endif // QT_CONFIG(tooltip)
         self.forward_button.setText(QCoreApplication.translate("MainWindow", u"\u0412\u043f\u0435\u0440\u0435\u0434", None))
+#if QT_CONFIG(tooltip)
+        self.spinbox.setToolTip(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u043b-\u0432\u043e \u0448\u0430\u0433\u043e\u0432", None))
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        self.set_button.setToolTip(QCoreApplication.translate("MainWindow", u"\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u0448\u0430\u0433\u043e\u0432 \u0448\u0430\u0433\u043e\u0432\u043e\u0433\u043e \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f", None))
+#endif // QT_CONFIG(tooltip)
         self.set_button.setText(QCoreApplication.translate("MainWindow", u"\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c", None))
+#if QT_CONFIG(tooltip)
+        self.brake_button.setToolTip(QCoreApplication.translate("MainWindow", u"\u0412\u043a\u043b\u044e\u0447\u0438\u0442\u044c \u0442\u043e\u0440\u043c\u043e\u0437, \u0443\u0431\u0440\u0430\u0442\u044c \u0438\u0437 \u0440\u0435\u0436\u0438\u043c\u0430 \u0443\u0434\u0435\u0440\u0436\u0430\u043d\u0438\u044f", None))
+#endif // QT_CONFIG(tooltip)
         self.brake_button.setText(QCoreApplication.translate("MainWindow", u"\u0422\u043e\u0440\u043c\u043e\u0437", None))
         self.menu.setTitle(QCoreApplication.translate("MainWindow", u"\u0424\u0430\u0439\u043b", None))
+        self.menu_2.setTitle(QCoreApplication.translate("MainWindow", u"\u041e \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0438", None))
     # retranslateUi
 

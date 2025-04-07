@@ -41,6 +41,14 @@ class RS485StepperControl(QMainWindow):
             QMessageBox.warning(self, "Предупреждение", "Выберите COM-порт.")
             return
 
+        if self.master:
+            print("Закрытие Modbus Master")
+            try:
+                self.master.close()
+            except Exception as e:
+                print(f"Ошибка при закрытии Modbus Master: {e}")
+            self.master = None
+
         if self.serial_connection and self.serial_connection.is_open:
             print(f"Закрытие порта: {self.serial_connection.port}")
             self.serial_connection.close()
@@ -57,10 +65,9 @@ class RS485StepperControl(QMainWindow):
             if not self.serial_connection.is_open:
                 self.serial_connection.open()
 
-            if self.master is None:
-                self.master = modbus_rtu.RtuMaster(self.serial_connection)
-                self.master.set_timeout(5.0)
-                self.master.set_verbose(True)
+            self.master = modbus_rtu.RtuMaster(self.serial_connection)
+            self.master.set_timeout(5.0)
+            self.master.set_verbose(True)
 
             print(f"Modbus успешно инициализирован на порту {selected_port}")
         except serial.SerialException as e:
@@ -79,6 +86,19 @@ class RS485StepperControl(QMainWindow):
         self.ui.select_button.clicked.connect(self.select_com_port)
         self.ui.refresh.triggered.connect(self.populate_com_ports)
         self.ui.exit.triggered.connect(self.close)
+        self.ui.About.triggered.connect(self.show_about_dialog)
+
+    def show_about_dialog(self):
+        """Отображает окно 'О приложении'."""
+        QMessageBox.about(
+            self,
+            "О приложении",
+            (
+                "<h2>AlternativaRS485</h2>"
+                "<p><b>Описание:</b> Разработано для управления шаговым двигателем по протоколу RS-485 Modbus RTU.</p>"
+                "<p><b>Использованные библиотеки и компоненты:</b> написана на языке программирования Python, использована библиотека PySide6.</p>"
+            )
+        )
 
     def select_com_port(self):
         """Обработчик кнопки выбора COM-порта."""
@@ -97,8 +117,8 @@ class RS485StepperControl(QMainWindow):
             self.ui.label.setText("Error")
 
     def on_com_port_changed(self):
+        """Обработчик изменения выбранного COM-порта."""
         print("COM-порт изменён")
-        self.init_serial()
 
     def send_coil_command(self, register_address):
         if self.master is None:
@@ -106,16 +126,22 @@ class RS485StepperControl(QMainWindow):
             self.ui.label.setText("Не инициализировано")
             return
 
+        self.ui.forward_button.setEnabled(False)
+        self.ui.backward_button.setEnabled(False)
+
         try:
             self.master.execute(self.slave_id, cst.WRITE_SINGLE_COIL, register_address, output_value=1)
             self.ui.label.setText("Отправлено в " + str(hex(register_address)))
-            QTimer.singleShot(2000, lambda: self.reset_coil(register_address))
+
+            QTimer.singleShot(2000, lambda: self.reset_coil_and_unlock(register_address))
         except Exception as e:
             QMessageBox.critical(self, "Ошибка", f"Ошибка записи coil {hex(register_address)}: {e}")
             self.ui.label.setText("Error")
+            self.ui.forward_button.setEnabled(True)
+            self.ui.backward_button.setEnabled(True)
 
-
-    def reset_coil(self, register_address):
+    def reset_coil_and_unlock(self, register_address):
+        """Сбрасывает значение coil и разблокирует кнопки."""
         if self.master is None:
             QMessageBox.warning(self, "Предупреждение", "Master Modbus не инициализирован.")
             self.ui.label.setText("Не инициализировано")
@@ -127,6 +153,9 @@ class RS485StepperControl(QMainWindow):
         except Exception as e:
             QMessageBox.critical(self, "Ошибка", f"Ошибка сброса coil {hex(register_address)}: {e}")
             self.ui.label.setText("Error")
+        finally:
+            self.ui.forward_button.setEnabled(True)
+            self.ui.backward_button.setEnabled(True)
 
     def forward(self):
         self.send_coil_command(0x2008)
